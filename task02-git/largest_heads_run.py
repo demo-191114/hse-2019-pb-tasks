@@ -26,9 +26,7 @@ def main():
     total = 0
     for _ in range(ITERS):
         total += 1
-        flips = (random.choice([0, 1]) for _ in range(FLIPS))
-        max_run = get_max_run(flips)
-        s += max_run
+        s += get_max_run(random.choice([0, 1]) for _ in range(FLIPS))
     print(s, total, s / total)
 
 
