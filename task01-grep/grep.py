@@ -17,12 +17,6 @@ def main(args_str: List[str]):
         line = line.rstrip('\n')
         if args.needle in line:
             print('Found needle in ' + line)
-
-    with open('input.txt', 'r') as in_file:
-        for line in in_file.readlines():
-            line = line.rstrip('\n')
-            if re.search(args.needle, line):
-                print(f'Found re in {line}')
     # STUB ENDS
 
 
